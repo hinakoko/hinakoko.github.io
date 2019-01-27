@@ -13,8 +13,35 @@
   <h2><iframe src="https://www.openprocessing.org/sketch/630763/embed/" width="600" height="600">模写したもの</iframe></h2>
 
   <h2>＜作り方＞</h2>
-  １.creative canbasで値を600×600
+  1.let num関数を600に設定する（キャンバスの大きさを600×600にするため）<br>
+  <br>
+  2.creative canbasで値を600×600を設定する代わりに先ほどのnumを使い、<br>
+  creative canbas(num,num)とかく<br>
+  <br>
+  3.家紋のベースとなる塗りつぶされた黒い円形の枠をellipseを使ってかく、<br>
+  その際、最初に黒色の円 fill(0) ellipse(num / 2, num / 2, num , num)をかき、<br>
+  それより少し小さい白色の円 fill(0) ellipse(num / 2, num / 2, num 1.15, num 1.15)をかく<br>
+  <br>
+  4.三角形をtriangleで作図し、それぞれの頂点をXY座標を使って指定する<br>
+   fill(0); // 塗りつぶしの色 <br>
+	triangle(201, 235, 407, 235, 300, 45); <br>
+	// 三角形1を生成(始点のx軸, 始点のy軸, 2点目のx軸, 2点目のy軸, 終点のx軸, 終点のy軸) <br>
+	<br>
+	fill(0); // 塗りつぶしの色 <br>
+  triangle(90, 433, 306, 433, 199, 238); <br>
+	// 三角形2を生成(始点のx軸, 始点のy軸, 2点目のx軸, 2点目のy軸, 終点のx軸, 終点のy軸) <br>
+	<br>
+		fill(0); // 塗りつぶしの色 <br>
+  triangle(310, 433, 505, 433, 407, 238); <br>
+	// 三角形3を生成(始点のx軸, 始点のy軸, 2点目のx軸, 2点目のy軸, 終点のx軸, 終点のy軸) <br>
+  <br>
+  <h2>＜レビューを受けて＞</h2>
+  キャンバスに家紋の名前を追加しました　<br>
+  textSize(13);//文字の大きさ　<br>
+　text('丸に三つ鱗', 530, 540);//家紋の名前 <br>
+　fill(0, 102, 153); <br>
 
+  
 
   </body>
 </html>
