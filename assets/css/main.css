@@ -1,19 +1,21 @@
-
 body {
   background: linear-gradient(#0ed2f7, #b2fefa ) fixed;
 }
 
-div {
-  margin: 120px 0;
-  text-align: center;
-}
-p {
-  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3", Courier New, sans-serif;
-  line-height: 1.5;
-  margin-bottom: 25px;
-  color: #fff;
+body {
+font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
 }
 
+.parent p {
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%,-50%);
+-webkit-transform : translate(-50%,-50%);
+transform : translate(-50%,-50%);
+width: 100px;
+text-align: center;/*一応BOX内の文字も中央寄せ*/
+}
 
 
 .nav {
